@@ -1,0 +1,40 @@
+<!-- src/app/registration/registration.component.html -->
+<form (ngSubmit)="onSubmit()" #registrationForm="ngForm">
+<body>
+  <div class="container">
+      <div class="side">
+        <img src="assets/images/trial 2.jpg" alt="Decorative image of two people smiling">
+      </div>
+      <div class="form-container">
+          <a class="back-link" href="#"><i class="fas fa-arrow-left"></i> Back to home</a>
+          <h2>Register</h2>
+          <p>Enter your details to start your pension process</p>
+          <form>
+            <input type="text" placeholder="RSA Pin" required>
+            <input type="text" placeholder="Surname" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <button type="submit">Register</button>
+          </form>
+          <p>Already have an account or not a retiree? <a class="link" href="#">Login here</a></p>
+          <p class="footer">Powered by StellarSync Technology © 2024 v1.0.0</p>
+      </div>
+      <div class="form-container">
+          <a class="back-link" href="#"><i class="fas fa-arrow-left"></i> Back to home</a>
+          <h2>Login</h2>
+          <p>Enter your details to access your account</p>
+          <form>
+            <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <a class="link" href="#">Forgot Password?</a>
+                <button type="submit">Login</button>
+            </form>
+            <p>Are you a retiree without an account? <a class="link" href="#">Register here</a></p>
+            <p class="footer">Powered by StellarSync Technology © 2024 v1.0.0</p>
+            <button type="submit" [disabled]="!registrationForm.form.valid">Register</button>
+  </form>
+          </div>
+        </div>
+    </body>
+    </html>

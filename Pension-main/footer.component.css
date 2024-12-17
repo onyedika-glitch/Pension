@@ -1,0 +1,19 @@
+img {
+background-color: #b6a996;
+  background: url('../images/trial.jpg') no-repeat right fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  min-height: 100%;}
+
+
+footer {
+  background-color:green;
+  margin: 0;
+}
